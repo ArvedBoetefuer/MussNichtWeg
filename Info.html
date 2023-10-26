@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Info </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+        
+         <!-- Google Font Lekton -->
+        <link href="https://fonts.googleapis.com/css?family=Lekton:700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="menustyle.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+            p{
+                color: #356859;
+                font-size: 16px;
+                font-family: 'Lekton', sans-serif;
+            }
+            h1{
+                color: #356859;
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <nav class="nav-extended z-depth-1">
+            <div class="nav-wrapper" style="background-color: #fffbe6">
+                <div>
+                    <a href="#" class="brand-logo center" style="color: #356859">Muss Nicht Weg</a>
+                </div>
+                <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="chat.html"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                    <li><a href="Login.html"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                </ul>
+            </div>
+            <div class="nav-content hide-on-med-and-down">
+                <ul class="tabs" style="background-color: #fffbe6">
+                    <li class="tab"><a href="home.html" style="color: #356859" target="_self">Home</a></li>
+                    <li class="tab"><a href="Angebot_suchen.html" style="color: #356859" target="_self">Angebote</a></li>
+                    <li class="tab"><a href="Eigene_Angebote.html" style="color: #356859" target="_self">Eigene Angebote</a></li>
+                    <li class="tab"><a href="Kochparty_suchen.html" style="color: #356859" target="_self">Kochparty</a></li>
+                    <li class="tab"><a href="Profil.html" style="color: #356859" target="_self">Profil</a></li>
+                    <li class="tab"><a href="Info.html" style="color: #356859" target="_self">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            $(document).ready(function(){
+                $('.tabs').tabs();
+            })
+        </script>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="img/navbar/Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="home.html" style="color: #356859">Home</a></li>
+                <li><a href="Angebot_suchen.html" style="color: #356859">Angebote</a></li>
+                <li><a href="Eigene_Angebote.html" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="Kochparty_suchen.html" style="color: #356859">Kochparty</a></li>
+                <li><a href="Profil.html" style="color: #356859">Profil</a></li>
+                <li><a href="Info.html" style="color: #356859">About</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="chat.html"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="Login.html"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>
+        
+       
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
+        
+        <div class="container" style="padding-top: 2%">
+            <div class="row">
+                <div class="center">
+                    <img style="width: 12%" class="center circle responisve-img z-depth-2" src="img/about/icon.png">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    
+                    <hr color="#fd5523" style="width: 100%">
+                    <h1>Über uns</h1>
+                    <div class="text_intro">
+                          <p>Wir kennen es alle. Wir machen unseren wöchentlichen Einkauf und kaufen alles worauf wir Lust haben.
+                              Meistens jedoch zu viel. Im Schnitt werfen wir deutschen insgesamt <font color="#fd5523">4,4 Millionen Tonnen</font> Lebensmittel weg.
+                              Jedes Jahr! Diese Zahl bezieht sich auf die Privathaushälter alleine. Das sind in etwa 150 Gramm täglich pro Kopf.
+                              Hier bei “Muss nicht weg” haben wir zwei Ansätze:
+                              1. Die Möglichkeit, sein Essen, welches man übrig hat, zu posten, sodass sich wer anders sich dieses abholen kann.
+                              2. Die Möglichkeit eine Kochparty zu erstellen, wo dann viele aus ihren übrigen Lebensmittel zusammen was kochen können.
+                          </p>
+                      </div>
+                      <hr color="#fd5523" style="width: 100%">  
+                </div>
+                <div class="col s12 m6">
+                    <img style="padding-top: 15%" class="responsive-img" src="img/about/us_beeing_the_fucks_we_are.jpg">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="page-footer" style="background-color: #356859">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Kontakt</h5>
+            </div>
+            
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    © 2019 Copyright Muss Nicht Weg
+                </div>
+                <div class="col s4 right">
+                    <a href="#" class="grey-text text-lighten-4" style="padding-right: 5%">Datenschutz Richtlinien</a>
+                    <a href="#" class="grey-text text-lighten-4">Impressum</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+</html>

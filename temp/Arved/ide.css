@@ -1,0 +1,58 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper > div{
+  padding: 1em;
+}
+
+
+
+
+.text_intro {
+  text-align: left;
+  color: #37966f;
+  font-weight: bold;
+  padding-right: 15%;
+  padding-left: 15% ;
+}
+
+.wichtig {
+  color: #fd5523;
+}
+
+
+/* Style the button and place it in the middle of the container/image */
+.container #btn-r {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container #btn {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.timepicker-canvas line{
+  stroke: #fd5523;
+}
+.timepicker-canvas-bg{
+  fill: #fd5523;
+}
+
+.timepicker-canvas-bearing{
+  fill: #fd5523;
+}
+.picker__date-display { 
+  background-color: #fd5523;
+}
+.picker__box{
+  background-color: #fd5523;
+}
+.picker__weekday-display{
+  background-color: #fd5523;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Profil </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+       
+        <!-- Google Font Lekton -->
+        <link href="https://fonts.googleapis.com/css?family=Lekton:700&display=swap" rel="stylesheet">
+
+        
+        <link rel="stylesheet" type="text/css" href="menustyle.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+            p{
+                color: #356859;
+                font-size: 25px;
+                font-family: 'Lekton', sans-serif;
+            }
+            
+            .container #btn1 {
+                position: absolute;
+                top: 21%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+            .container #btn2 {
+                position: absolute;
+                top: 43%;
+                left: 64%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+            .container #btn3 {
+                position: absolute;
+                top: 69%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        
+        </style>
+    </head>
+   
+    <body>
+        <nav class="nav-extended z-depth-1">
+            <div class="nav-wrapper" style="background-color: #fffbe6">
+                <div>
+                    <a href="#" class="brand-logo center hide-on-small-only" style="color: #356859">Muss Nicht Weg</a>
+                </div>
+                <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="chat.html"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                    <li><a href="Login.html"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                </ul>
+            </div>
+            <div class="nav-content hide-on-med-and-down">
+                <ul class="tabs" style="background-color: #fffbe6">
+                    <li class="tab"><a href="home.html" style="color: #356859" target="_self">Home</a></li>
+                    <li class="tab"><a href="Angebot_suchen.html" style="color: #356859" target="_self">Angebote</a></li>
+                    <li class="tab"><a href="Eigene_Angebote.html" style="color: #356859" target="_self">Eigene Angebote</a></li>
+                    <li class="tab"><a href="Kochparty_suchen.html" style="color: #356859" target="_self">Kochparty</a></li>
+                    <li class="tab"><a href="Profil.html" style="color: #356859" target="_self">Profil</a></li>
+                    <li class="tab"><a href="Info.html" style="color: #356859" target="_self">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            $(document).ready(function(){
+                $('.tabs').tabs();
+            })
+        </script>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="home.html" style="color: #356859">Home</a></li>
+                <li><a href="Angebot_suchen.html" style="color: #356859">Angebote</a></li>
+                <li><a href="Eigene_Angebote.html" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="Kochparty_suchen.html" style="color: #356859">Kochparty</a></li>
+                <li><a href="Profil.html" style="color: #356859">Profil</a></li>
+                <li><a href="Info.html" style="color: #356859">About</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="chat.html"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="Login.html"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>
+        
+       
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+            $(document).ready(function(){
+            $('.modal').modal();
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.add-btn');
+                var instances = M.FloatingActionButton.init(elems, {
+                    direction: 'down',
+                    hoverEnabled: true
+                });
+            });
+        </script>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Passwort ändern</h4>
+                <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="col s12 m6">  
+                      <p>Altes Passwort:</p>
+                    </div>
+                    <div class="input-field col s6">
+                      <input placeholder="Altes Passwort" id="first_name" type="password" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m6">  
+                      <p>Neues Passwort:</p>
+                    </div>
+                    <div class="input-field col s6">
+                      <input placeholder="Neues Passwort" id="first_name" type="password" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m6">  
+                      <p>Neues Passwort wiederholen:</p>
+                    </div>
+                    <div class="input-field col s6">
+                      <input placeholder="Neues Passwort wiederholen" id="first_name" type="password" class="validate">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-light btn">Abbrechen</a>
+                <a href="#!" class="modal-close waves-effect waves-light btn">Speichern</a>
+            </div>
+        </div>
+        
+            <!-- Modal Structure -->
+        <div id="modal2" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <p>Persönliche Informationen ändern</p>
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input id="vorname" type="text" class="validate">
+                          <label for="vorname" style="color:#fd5523;">Vorname</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="nachname" type="text" class="validate">
+                          <label for="nachname" style="color:#fd5523;">Nachname</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s9">
+                          <input id="strasse" type="text" class="validate">
+                          <label for="strasse" style="color:#fd5523;">Strasse</label>
+                        </div>
+                        <div class="input-field col s3">
+                          <input id="hausnr" type="text" class="validate">
+                          <label for="hausnr" style="color:#fd5523;">HausNr.</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s3">
+                          <input id="postleitzahl" type="text" class="validate">
+                          <label for="postleitzahl" style="color:#fd5523;">Postleitzahl</label>
+                          </div>
+                          <div class="input-field col s9">
+                          <input id="ort" type="text" class="validate">
+                          <label for="ort" style="color:#fd5523;">Ort</label>
+                        </div>
+                        </div>
+                        <p>E-Mail Adresse ändern</p>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="text" class="validate">
+                          <label for="email" style="color:#fd5523;">E-Mail Adresse</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="emailwieder" type="text" class="validate">
+                          <label for="emailwieder" style="color:#fd5523;">E-Mail Adresse wiederholen</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="passwort_eingeben" type="password" class="validate">
+                          <label for="passwort_eingeben" style="color:#fd5523;">Passwort eingeben</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-light btn">Abbrechen</a>
+                <a href="#!" class="modal-close waves-effect waves-light btn">Speichern</a>
+            </div>
+        </div>
+    
+        <div class="container"> 
+            <div class="row">
+                <div class="col s12 m6">
+                    
+                    <a id="btn1" data-target="modal2" class="modal-trigger btn-floating btn-large waves-effect waves-light">
+                        <i class="large material-icons">mode_edit</i>
+                    </a>
+                    <p>Persönliche Informationen</p> 
+                    <p>Vorname Name ..........</p>
+                    <p>Straße HausNr. ..........</p>
+                    <p>PLZ Ort ..........</p>
+                    <p>E-Mail Adresse: ..........</p>
+                </div>
+                <div class="col s12 m6">
+                    <img src="img/profil/profil_img.png" alt="Profile Picture" style="width:250px;height:250px;" class="circle responsive-img">
+                    <a id="btn2" class="btn-floating btn-large waves-effect waves-light right"><i class="material-icons"style="color:#fffbe6; background-color: #fd5523; position-top: -20px;">add</i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                     <button id="btn3" data-target="modal1" style="color:#fffbe6" class="modal-trigger btn-floating btn-large waves-effect waves-light">
+                         <i class="large material-icons"style="color:#fffbe6; position-top: -20px;">mode_edit</i></button>
+                    <p>Passwort</p>
+                    <p>********</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="page-footer" style="background-color: #356859">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Kontakt</h5>
+            </div>
+            
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    © 2019 Copyright Muss Nicht Weg
+                </div>
+                <div class="col s4 right">
+                    <a href="#" class="grey-text text-lighten-4" style="padding-right: 5%">Datenschutz Richtlinien</a>
+                    <a href="#" class="grey-text text-lighten-4">Impressum</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+</html>

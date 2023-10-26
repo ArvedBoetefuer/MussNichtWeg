@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kochparty erstellen </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+       
+        
+        <link rel="stylesheet" type="text/css" href="menustyle.css">
+
+        <link rel="stylesheet" type="text/css" href="ide.css"
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #356859;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+            .lul {
+                position: relative;
+                text-align: center;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #img {
+                opacity: 0.5;
+                filter: alpha(opacity=50); /* For IE8 and earlier */
+            }
+            .lul #btn {
+                position: absolute;
+                top: 90%;
+                left: 95%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+            h2{
+                color: #356859;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 40px;
+                margin: 0;
+            }
+            #headline-wrapper{
+                margin-top: 20px;
+                border-top: solid #356859;
+                border-bottom: solid #356859;
+                height: 100px;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div class="navbar-fixed">
+            <nav class="nav-extended z-depth-0">
+                    <div class="nav-wrapper" style="background-color: #fffbe6">
+                        <div>
+                            <a href="#" class="brand-logo center hide-on-small-only" style="color: #356859">Muss Nicht Weg</a>
+                        </div>
+                        <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                            <li><a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-content hide-on-med-and-down">
+                        <ul class="tabs" style="background-color: #fffbe6">
+                            <li class="tab"><a href="#test2" style="color: #356859">Profil</a></li>
+                            <li class="tab"><a href="#test3" style="color: #356859">Eigene Angebote</a></li>
+                            <li class="tab"><a href="#test4" style="color: #356859">About</a></li>
+                            <li class="tab"><a href="#test6" style="color: #356859">Einstellungen </a></li>
+                        </ul>
+                    </div>
+                </nav>          
+        </div>
+        
+        <script>
+            $(document).ready(function(){
+                $('.tabs').tabs();
+            })
+        </script>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="#" style="color: #356859">Profil</a></li>
+                <li><a href="#" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="#" style="color: #356859">About</a></li>
+                <li><a href="#" style="color: #356859">Einstellungen</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="#"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>
+        
+       
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
+        
+        <div class="container" style="padding-top: 5%">
+            <div id="headline-wrapper" class="center valign-wrapper">
+                <h2 class="center-block">
+                    Neue Kockparty erstellen
+                </h2>
+            </div>
+            
+            <div class="row" style="padding-top: 5%">
+          
+              <div class="col s12 m4">
+                      <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1' style="background-color: #fd5523">Anzahl</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">1</a></li>
+                        <li><a href="#!">2</a></li>
+                        <li><a href="#!">3</a></li>
+                        <li><a href="#!">4</a></li>
+                        <li><a href="#!">5</a></li>
+                        <li><a href="#!">6</a></li>
+                        <li><a href="#!">7</a></li>
+                        <li><a href="#!">8</a></li>
+                        
+                    </ul>
+                    <script>
+                    $('.dropdown-trigger').dropdown();
+                    </script>
+                    <div class="row">
+                            <form class="col s12">
+                                
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="gericht" type="text" style="color: #37966f">
+                                  <label for="gericht" style="color: #fd5523">Gericht</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="zutat" type="text" style="color: #37966f">
+                                  <label for="zutat" style="color: #fd5523">Was bringen Sie mit?</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                        <input type="date" class="mhd" style="color: #37966f">
+                                        <label for="date" style="color: #fd5523">Mindest Haltbarkeits Datum</label>
+                                        
+                                </div>
+                              </div>
+                              <div class="row">
+                                    <div class="input-field col s12">
+                                      <textarea id="textarea1" class="materialize-textarea" style="color: #37966f"></textarea>
+                                      <label for="textarea1" style="color: #fd5523">Beschreibung</label>
+                                    </div>
+                                  </div>
+                                <div class="row">
+                                  <div class="input-field col s6">
+                                        <input type="text" class="datepicker" style="color: #37966f">
+                                        <label for="date" style="color: #fd5523">Datum</label>
+                                    </div>
+                                
+                                  <div class="input-field col s6">
+                                      <input type="text" class="timepicker" id="time" style="color: #37966f">
+                                      <label for="time" style="color: #fd5523">Uhrzeit</label>
+                                  </div>
+                                </div>
+
+                            </form>
+                    </div>
+
+                      
+                 
+              </div>
+                  
+              <div class="col s12 m8">
+                <div class="lul">
+                    <img id="img" class="responsive-img" src="pics\Placeholder_food.png">
+                    <div class="centered"><font color="#356859"><font size="6">Bitte Foto Hinzufügen</font></div>
+                    <a id="btn" class="btn-floating btn-large waves-effect waves-light right"><i class="material-icons"style="color:#fffbe6; background-color: #fd5523; position-top: -20px;">add</i></a>
+                </div>
+              </div>
+              <div class="col s12 ">
+                  <div class="center">
+                    <a id="btn-kp" class="waves-effect waves-light btn-large" style="background-color: #356859;">Kochparty erstellen</a>
+                </div>
+              </div>
+            
+              
+                    
+                  
+            </div>
+              
+              
+        </div>
+    <script>
+        const Calender = document.querySelector('.datepicker');
+        M.Datepicker.init(Calender,{});
+        const timer = document.querySelector('.timepicker');
+        M.Timepicker.init(timer,{});
+        
+    </script>
+    <br><br><br>
+    </body>
+    <footer class="page-footer" style="background-color: #356859">
+            <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                <h5 class="white-text">Kontakt</h5>
+                </div>
+                
+            </div>
+            </div>
+            <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col s4">
+                        © 2019 Copyright Muss Nicht Weg
+                    </div>
+                    <div class="col s4 right">
+                        <a href="#" class="grey-text text-lighten-4" style="padding-right: 5%">Datenschutz Richtlinien</a>
+                        <a href="#" class="grey-text text-lighten-4">Impressum</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </footer>
+</html>

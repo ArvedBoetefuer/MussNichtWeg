@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Login</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="ide.css">
+    <link type="text/css" rel="stylesheet" href="test.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- JQuerry -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Font Montserrrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <style>
+        .row > div{
+            padding: 10px;
+        }
+        .row{
+            padding: 70% auto;
+        }
+        .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper > div{
+  padding: 1em;
+}
+
+
+
+
+.text_intro {
+  text-align: left;
+  color: #37966f;
+  font-weight: bold;
+  padding-right: 15%;
+  padding-left: 15% ;
+}
+
+.wichtig {
+  color: #fd5523;
+}
+
+
+/* Style the button and place it in the middle of the container/image */
+.container #btn-r {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container #btn {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.timepicker-canvas line{
+  stroke: #fd5523;
+}
+.timepicker-canvas-bg{
+  fill: #fd5523;
+}
+
+.timepicker-canvas-bearing{
+  fill: #fd5523;
+}
+.picker__date-display { 
+  background-color: #fd5523;
+}
+.picker__box{
+  background-color: #fd5523;
+}
+.picker__weekday-display{
+  background-color: #fd5523;
+}
+    </style>
+  </head>
+  <body style="background-color:#fffbe6;">
+    <div class="container">
+      <h1 style="color: #fd5523; text-align: center; font-family: 'Montserrat', sans-serif;"> Willkommen bei Muss nicht weg!</h1>
+      <div class="row">
+
+        <div class="col s12 m6 hide-on-small-only">
+                <div class="center">
+                    
+                  <div class="bild" style="padding-left: 25%; padding-right: 25%; padding-top: 15%">
+                      <img src="img/login/logo.png" alt="" class="circle responsive-img z-depth-2">
+                  </div>
+                      <br><br>
+                      <hr color="#fd5523" style="width: 70%">
+                      <div class="text_intro">
+                          <p>Wir kennen es alle. Wir machen unseren wöchentlichen Einkauf und kaufen alles worauf wir Lust haben.
+                              Meistens jedoch zu viel. Im Schnitt werfen wir deutschen insgesamt <font color="#fd5523">4,4 Millionen Tonnen</font> Lebensmittel weg.
+                              Jedes Jahr! Diese Zahl bezieht sich auf die Privathaushälter alleine. Das sind in etwa 150 Gramm täglich pro Kopf.
+                              Hier bei “Muss nicht weg” haben wir zwei Ansätze:
+                              1. Die Möglichkeit, sein Essen, welches man übrig hat, zu posten, sodass sich wer anders sich dieses abholen kann.
+                              2. Die Möglichkeit eine Kochparty zu erstellen, wo dann viele aus ihren übrigen Lebensmittel zusammen was kochen können.
+                          </p>
+                      </div>
+                      <hr color="#fd5523" style="width: 70%"> 
+                      <br><br> 
+                          
+                </div>
+        
+        </div>
+        
+        <div class="col s12 m6">
+          
+            <div class="center">
+              
+              <div class="row">
+                  <form class="col s12">
+                      <br><br><br><br><br><br><br><br><br>
+                      <div class="input-field col s12">
+                          <i class="material-icons prefix">email</i>
+                          <input id="email" type="email" class="validate">
+                          <label for="email">Email</label>
+                          <span class="helper-text" data-error="Bitte gültige Email eingeben!" data-success="Korrekt"></span>
+                      </div>
+                      <div class="input-field col s12">
+                          <i class="material-icons prefix">lock_outline</i>
+                          <input id="lock_outline" type="password" class="validate">
+                          <label for="lock_outline">Passwort</label>
+                          <span class="helper-text" data-error="Passwort vergessen?"></span>
+                      </div>
+                      
+                  </form>
+              </div>
+                 <a href="home.html"><button class="btn waves-effect waves-light" style="background-color: #356859;" type="submit" name="action"><font color="#ffffff">Login</font>
+                  <i class="material-icons right">send</i>
+                  </button></a> 
+
+                 <a href="Register.html"><button class="btn waves-effect waves-light" style="background-color: #356859;" type="submit" name="action">Register
+                  <i class="material-icons right">person_add</i>
+                  </button></a> 
+            </div>
+        </div>
+        
+        
+      </div>
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!--<script type="text/javascript" src="script.js"></script> -->
+  </body>
+</html>

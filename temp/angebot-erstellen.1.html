@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Neues Angebot </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #356859;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+            h2{
+                color: #356859;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 40px;
+                margin: 0;
+            }
+            h4{
+                color: #356859;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25px;
+                margin-top: 15%;
+            }
+            #headline-wrapper{
+                margin-top: 20px;
+                border-top: solid #356859;
+                border-bottom: solid #356859;
+                height: 100px;
+            }
+            #content-wrapper{
+                margin-top: 5%;
+            }
+            .input-wrapper{
+                margin-top: 20px;
+            }
+            .picture-wrapper{
+                height: 0;
+                width: 100%;
+                padding-bottom: 70%;
+                background-color: #bbbbbb;
+            }
+            .inner-picture{
+                padding-top: 20%;
+            }
+            .material-icons{
+                color: white;
+                font-size: 10vw;
+            }
+            #add-field-wrapper{
+                position: relative;
+                height: 50px;
+                padding: 0 10.5px 0 10.5px;
+                text-align: center;
+            }
+            #add-field{
+                height: 100%;
+                width: 80%;
+                background-color: #356859;
+                margin: 0;
+                border-radius: 100px;
+                display: inline-block;
+            }
+            @media (min-width: 800px){
+                #add-field{
+                    height: 100%;
+                    width: 340px;
+                    background-color: #356859;
+                    margin: 0;
+                    border-radius: 100px;
+                    display: inline-block;
+                }
+            }
+            #add-field-text{
+                color: #fffbe6; 
+                margin: 12px 0 0 0; 
+                font-size: 18px;
+                text-align: center;
+            }
+            @media (max-width: 400px){
+                #add-field-text{
+                    color: #fffbe6; 
+                    margin: 9.5% 0 0 0; 
+                    font-size: 4vw;
+                    text-align: center;
+                }
+            }
+            #add-icon{
+                font-size: 40px; 
+                color: #fffbe6; 
+                float: left;
+                padding: 5px
+            }
+            .hover{
+                display: none;
+            }
+            .picture-wrapper:hover .hover{
+                display: block;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div class="navbar-fixed">
+            <nav class="nav-extended z-depth-0">
+                <div class="nav-wrapper" style="background-color: #fffbe6">
+                    <div>
+                        <a href="#" class="brand-logo center hide-on-small-only" style="color: #356859">Muss Nicht Weg</a>
+                    </div>
+                    <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                        <li><a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-med-and-down">
+                    <ul class="tabs" style="background-color: #fffbe6">
+                        <li class="tab"><a href="#test2" style="color: #356859">Profil</a></li>
+                        <li class="tab"><a href="#test3" style="color: #356859">Eigene Angebote</a></li>
+                        <li class="tab"><a href="#test4" style="color: #356859">About</a></li>
+                        <li class="tab"><a href="#test6" style="color: #356859">Einstellungen </a></li>
+                    </ul>
+                </div>
+            </nav>          
+        </div>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="img/navbar/Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="#" style="color: #356859">Profil</a></li>
+                <li><a href="#" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="#" style="color: #356859">About</a></li>
+                <li><a href="#" style="color: #356859">Einstellungen</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="#"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>
+               
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('select').formSelect();
+                $('.tabs').tabs();
+                $('.datepicker').datepicker();
+            })
+        </script>
+
+        <div class="container" id="content-wrapper">
+            <div id="headline-wrapper" class="center valign-wrapper">
+                <h2 class="center-block">
+                    Neues Angebot erstellen
+                </h2>
+            </div>
+            <div class="row" style="margin-top: 8%">
+                <div class="col s12 m6">
+                    <div class="input-wrapper">
+                        <form class="input-field" action="">
+                            <input type="text" id="Bezeichnung-Titel">
+                            <label for="Bezeichung-Titel">Bezeichnung / Titel</label>
+                        </form>
+                        <div class="input-field">
+                            <textarea id="Beschreibung" class="materialize-textarea"></textarea>
+                            <label for="Beschreibung">Beschreibung & Anmerkungen</label>
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                                <form class="input-field" style="margin: 0">
+                                    <input type="text" id="Anzahl">
+                                    <label for="Anzahl">Anzahl</label>
+                                </form>
+                            </div>
+                            <div class="col s6 input-field" style="margin: 0">
+                                <select>
+                                    <option value="" disabled selected>Einheit</option>
+                                    <option value="">Stück</option>
+                                    <option value="">g</option>
+                                    <option value="">mg</option>
+                                    <option value="">l</option>
+                                    <option value="">ml</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled selected>Kategorie</option>
+                                <option value="1">Gemüse</option>
+                                <option value="2">Obst</option>
+                                <option value="3">Backware</option>
+                                <option value="3">Fleisch</option>
+                                <option value="3">Fisch</option>
+                                <option value="3">Milchprodukte</option>
+                                <option value="3">Snacks</option>
+                                <option value="3">Nudeln</option>
+                                <option value="3">Sonstige</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <form class="input-field">
+                            <input type="text" id="MHD" class="datepicker">
+                            <label for="MHD">Mindestensthaltbarkeitsdatum</label>
+                        </form>
+                        <h4 class="center">
+                            Abholzeitraum
+                        </h4>
+                        <div class="row">
+                            <div class="col s6 input-field">
+                                <input type="text" id="von" class="datepicker">
+                                <label for="von">Von</label>
+                            </div>
+                            <div class="col s6 input-field">
+                                <input type="text" id="bis" class="datepicker">
+                                <label for="bis">Bis</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="picture-wrapper">
+                                <div class="inner-picture center">
+                                    <icon class="material-icons">image</icon>
+                                </div> 
+                                <div class="hover">
+                                    <div id="add-field-wrapper">
+                                        <a href="#">
+                                            <div class="row z-depth-2" id="add-field" onmouseover="addFieldOnMouseOver()" onmouseout="addFieldOnMouseOut()">
+                                                <div class="col s2" style="padding: 0">
+                                                    <i class="material-icons" id="add-icon">add_circle</i>
+                                                </div>
+                                                <div class="col s10" >
+                                                    <p id="add-field-text">Bild hinzufügen</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4"></div>
+                        <div class="col s4"></div>
+                        <div class="col s4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <footer class="page-footer" style="background-color: #356859">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Kontakt</h5>
+            </div>  
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    © 2019 Copyright Muss Nicht Weg
+                </div>
+                <div class="col s4 right">
+                    <a href="#" class="grey-text text-lighten-4" style="padding-right: 5%">Datenschutz Richtlinien</a>
+                    <a href="#" class="grey-text text-lighten-4">Impressum</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+</html>

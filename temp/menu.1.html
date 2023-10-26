@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Menü </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+       
+        
+        <link rel="stylesheet" type="text/css" href="menustyle.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #356859;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <nav class="nav-extended z-depth-0">
+            <div class="nav-wrapper" style="background-color: #fffbe6">
+                <div>
+                    <a href="#" class="brand-logo center hide-on-small-only" style="color: #356859">Muss Nicht Weg</a>
+                </div>
+                <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                    <li><a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                </ul>
+            </div>
+            <div class="nav-content hide-on-med-and-down">
+                <ul class="tabs" style="background-color: #fffbe6">
+                    <li class="tab"><a href="#test2" style="color: #356859">Profil</a></li>
+                    <li class="tab"><a href="#test3" style="color: #356859">Eigene Angebote</a></li>
+                    <li class="tab"><a href="#test4" style="color: #356859">About</a></li>
+                    <li class="tab"><a href="#test6" style="color: #356859">Einstellungen </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            $(document).ready(function(){
+                $('.tabs').tabs();
+            })
+        </script>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="#" style="color: #356859">Profil</a></li>
+                <li><a href="#" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="#" style="color: #356859">About</a></li>
+                <li><a href="#" style="color: #356859">Einstellungen</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="#"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>
+        
+       
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
+    </body>
+</html>

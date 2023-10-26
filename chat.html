@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nachrichten </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+       
+        
+        <link rel="stylesheet" type="text/css" href="menustyle.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+            #content-wrapper{
+                margin-top: 5%;
+            }
+            #chat-wrapper{
+                background-color: #35685923;
+                height: 70vh;
+                position: relative;
+            }
+            #input-wrapper{
+                position: absolute;
+                bottom: 0px;
+                height: 55px;
+                width: 95%;
+                background-color: white;
+                border: solid #356859;
+                border-radius: 5px;
+                margin: 0 10px 10px 10px;
+            }
+            #button-wrapper{
+                background-color: #356859;
+                border-radius: 10px;
+                margin: 4px 0 0 0;
+            }
+            #send-button{
+                color: #356859;
+                font-size:35px;
+                padding: 7px 0 0 40%;
+            }
+            #profil-banner{
+                height: 75px;
+                background-color: #356859
+            }
+            #profil-img{
+                height: 60px;
+                width: auto;
+                margin: 7px 0 0 0;
+                float: right;
+            }
+            h4{
+                color: #fffbe6;
+                font-size: 35px;
+                margin: 18px 0 0 0;
+            }
+            #partner-wrapper{
+                background-color: #356859;
+                height: 100px;
+                margin-bottom: 2px;
+                overflow: hidden;
+            }
+            #partner-img{
+                height: 80px;
+                margin: 10px 0 0 10px;
+            }
+            #partner-name{
+                color: #fffbe6;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            #partner-message{
+                overflow:hidden;
+                color: #fffbe6;
+                margin: 5px 0 5px 0;
+                height: 50px;
+            }
+            #left-wrapper{
+                height: 79vh;
+                overflow: auto;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div class="navbar-fixed">
+            <nav class="nav-extended z-depth-1">
+                <div class="nav-wrapper" style="background-color: #fffbe6">
+                    <div>
+                        <a href="home.html" class="brand-logo center hide-on-small-only" style="color: #356859">Muss Nicht Weg</a>
+                    </div>
+                    <a href="home.html" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="chat.html"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                        <li><a href="Login.html"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-med-and-down">
+                    <ul class="tabs" style="background-color: #fffbe6">
+                        <li class="tab"><a href="home.html" style="color: #356859" target="_self">Home</a></li>
+                        <li class="tab"><a href="Angebot_suchen.html" style="color: #356859" target="_self">Angebote</a></li>
+                        <li class="tab"><a href="Eigene_Angebote.html" style="color: #356859" target="_self">Eigene Angebote</a></li>
+                        <li class="tab"><a href="Kochparty_suchen.html" style="color: #356859" target="_self">Kochparty</a></li>
+                        <li class="tab"><a href="Profil.html" style="color: #356859" target="_self">Profil</a></li>
+                        <li class="tab"><a href="Info.html" style="color: #356859" target="_self">About</a></li>
+                    </ul>
+                </div>
+            </nav>          
+        </div>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="img/navbar/Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="home.html" style="color: #356859">Home</a></li>
+                <li><a href="Angebot_suchen.html" style="color: #356859">Angebote</a></li>
+                <li><a href="Eigene_Angebote.html" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="Kochparty_suchen.html" style="color: #356859">Kochparty</a></li>
+                <li><a href="Profil.html" style="color: #356859">Profil</a></li>
+                <li><a href="Info.html" style="color: #356859">About</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="chat.html"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="Login.html"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>        
+       
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+            })
+        </script>
+
+        <div class="container" id="content-wrapper">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div id="left-wrapper">
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Tanja
+                                    </p>
+                                    <p id="partner-message">
+                                        Du: Hey, wie siehts aus? Wann könnte ich die Bananen abholen?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil1.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Ellen
+                                    </p>
+                                    <p id="partner-message">
+                                        Ellen: Alles klar!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil2.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Alfred
+                                    </p>
+                                    <p id="partner-message">
+                                        Alfred: Ne, heute
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil3.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Luke
+                                    </p>
+                                    <p id="partner-message">
+                                        Du: Okay, um wie viel Uhr?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil4.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Sina
+                                    </p>
+                                    <p id="partner-message">
+                                        Du: Top, das passt
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil5.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Frank
+                                    </p>
+                                    <p id="partner-message">
+                                        Du: Wie es Dir lieber ist
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil6.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Simone
+                                    </p>
+                                    <p id="partner-message">
+                                        Simone: Oh man bitte stop
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil7.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Lisa
+                                    </p>
+                                    <p id="partner-message">
+                                        Lisa: was mach ioc hier
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil8.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Einstein
+                                    </p>
+                                    <p id="partner-message">
+                                        Einstein: Einfach eine super App, die Entwickler sollten was gewinnen!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="partner-wrapper">
+                            <div class="row">
+                                <div class="col s5 m4 l3">
+                                    <img id="partner-img" class="responive-img circle" src="img/chat/profil9.jpg" alt="Profil Bild">
+                                </div>
+                                <div class="col s7 m8 l9" style="height: 100px">
+                                    <p id="partner-name">
+                                        Frank
+                                    </p>
+                                    <p id="partner-message">
+                                        Du: Wie es Dir lieber ist
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 hide-on-small-only">
+                    <div id="profil-banner">
+                        <div class="row" style="padding-left: 10%">
+                            <div class="col s4">
+                                <img class="circle" id="profil-img" src="img/chat/profil.jpg" alt="Profil Bild">
+                            </div>
+                            <div class="col s8">
+                                <h4>Tanja</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chat-wrapper">
+                        <div id="input-wrapper">
+                            <div class="row" style="padding:0 ; margin: 0">
+                                <div class="col s10" style="">
+                                    <form >
+                                        <input type="text" placeholder="Nachricht" onfocus="this.placeholder =''" onblur="this.placeholder = 'Nachricht'">
+                                    </form>
+                                </div>
+                                <div class="col s2">
+                                    <icon id="send-button" class="material-icons">send</icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-breaker" style="margin: 10%">
+        </div>
+        
+       
+    </body>
+    <footer class="page-footer" style="background-color: #356859">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Kontakt</h5>
+            </div>            
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    © 2019 Copyright Muss Nicht Weg
+                </div>
+                <div class="col s4 right">
+                    <a href="#" class="grey-text text-lighten-4" style="padding-right: 5%">Datenschutz Richtlinien</a>
+                    <a href="#" class="grey-text text-lighten-4">Impressum</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+</html>

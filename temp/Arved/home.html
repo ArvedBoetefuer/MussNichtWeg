@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> home </title>
+        <meta charset="UTF-8"> 
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- JQuerry -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Google Font Montserrrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function addFieldOnMouseOver(){
+            document.getElementById("add-field").style.backgroundColor = "#274b40";
+            document.getElementById("add-icon").style.color = "#fd5523";
+            }
+
+            function addFieldOnMouseOut(){
+            document.getElementById("add-field").style.backgroundColor = "#356859";
+            document.getElementById("add-icon").style.color = "#fffbe6";
+            }
+        </script>
+
+        <style>
+            body{
+            background-color: #fffbe6;
+            }
+            .brand-logo{
+                font-family: 'Montserrat', sans-serif;
+            }
+            div.nav-content ul{
+                text-align: center;
+            }
+            div.nav-content ul li{
+                float: none;
+            }
+            #sidebar-icon{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+            .tabs .indicator{
+                background-color: #356859;
+            }
+            .tabs .tab a:hover{
+                background-color: #fffbe6;
+            }
+            .tabs .tab a.active{
+                background-color: #fffbe6;
+                color: none;
+            }
+            .top-line{
+                margin-top: 0;
+            }
+            .bottom-line{
+                position: absolute;
+                left: 10.5px;
+                bottom: 0;
+                width: 95%;
+                margin: 0;
+            }
+            h2{
+                font-family: 'Montserrat', sans-serif;
+                color: #fd5523;
+                font-size: 9vw;
+                padding-left: 1%;
+                padding-right: 1%;
+            }                    
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                color: #fd5523;
+                font-size: 38px;
+                margin: 0;
+                margin-top: 20px;
+            }
+            @media (max-width: 999px){
+                h3{
+                    font-family: 'Montserrat', sans-serif;
+                    color: #fd5523;
+                    font-size: 3vw;
+                    margin: 0;
+                    margin-top: 20px;
+                }
+            }
+            p{
+                color: #356859;
+                font-size: 22px;
+            }
+            @media (max-width: 1300px){
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            @media (max-width: 600px){
+                p{
+                    font-size: 4vw;
+                }
+            }
+            @media (max-width: 300px){
+                h4{
+                    font-family: 'Montserrat', sans-serif;
+                    color: #fd5523;
+                    font-size: small;
+                    font-weight: bold;
+                }
+            }
+            @media (min-width: 301px){
+                h4{
+                    font-family: 'Montserrat', sans-serif;
+                    color: #fd5523;
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+            }
+            @media (min-width: 601px){
+                h4{
+                    font-family: 'Montserrat', sans-serif;
+                    color: #fd5523;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+            .searchbar-wrapper{
+
+                background-color: #356859;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: relative;
+            }
+            .input-field input[type=text]{
+                border-bottom: 1px solid #fffbe6;
+            }
+            .input-field input[type=text]:focus{
+                border-bottom: 1px solid #fd5523;
+            }
+            #separator-line{
+                width: 40%;
+                height: 5px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            #add-field-wrapper{
+                position: relative;
+                height: 50px;
+                padding: 0 10.5px 0 10.5px;
+                text-align: center;
+            }
+            #add-field{
+                height: 100%;
+                width: 80%;
+                background-color: rgb(53, 104, 89);
+                margin: 0;
+                border-radius: 100px;
+                display: inline-block;
+            }
+            @media (min-width: 800px){
+                #add-field{
+                    height: 100%;
+                    width: 340px;
+                    background-color: #356859;
+                    margin: 0;
+                    border-radius: 100px;
+                    display: inline-block;
+                }
+            }
+            #add-field-text{
+                color: #fffbe6; 
+                margin: 12px 0 0 0; 
+                font-size: 18px;
+                text-align: center;
+            }
+            @media (max-width: 400px){
+                #add-field-text{
+                    color: #fffbe6; 
+                    margin: 9.5% 0 0 0; 
+                    font-size: 4vw;
+                    text-align: center;
+                }
+            }
+            #add-icon{
+                font-size: 40px; 
+                color: #fffbe6; 
+                float: left;
+                padding: 5px
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div class="navbar-fixed">
+                <nav class="nav-extended z-depth-0">
+                        <div class="nav-wrapper" style="background-color: #fffbe6">
+                            <div>
+                                <a href="#" class="brand-logo center hide-on-small-only" style="color: #356859">Muss Nicht Weg</a>
+                            </div>
+                            <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" style="color: #356859">menu</i></a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="#"><i class="material-icons" style="color: #356859">notifications</i></a></li>
+                                <li><a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-content hide-on-med-and-down">
+                            <ul class="tabs" style="background-color: #fffbe6">
+                                <li class="tab"><a href="#test2" style="color: #356859">Profil</a></li>
+                                <li class="tab"><a href="#test3" style="color: #356859">Eigene Angebote</a></li>
+                                <li class="tab"><a href="#test4" style="color: #356859">About</a></li>
+                                <li class="tab"><a href="#test6" style="color: #356859">Einstellungen </a></li>
+                            </ul>
+                        </div>
+                    </nav>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $('.tabs').tabs();
+            })
+        </script>
+        
+        <div class="sidenav" id="mobile-links" style="background-color: #fffbe6"> 
+            <img class="circle responsive-img" id="sidebar-icon" src="pics\Icon.png" alt="Icon" width="100">
+            <ul>
+                <li><a href="#" style="color: #356859">Profil</a></li>
+                <li><a href="#" style="color: #356859">Eigene Angebote</a></li>
+                <li><a href="#" style="color: #356859">About</a></li>
+                <li><a href="#" style="color: #356859">Einstellungen</a></li>
+            </ul>  
+            <div style="position: absolute; bottom: 70px; left: 0;">
+
+                <a href="#"><i class="material-icons" style="color: #356859; margin: 5px">notifications</i></a>
+                <a href="#"><i class="material-icons" style="color: #356859">exit_to_app</i></a>
+            </div>
+        </div>     
+       
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
+
+        <div class="container" style="margin-top: 5%;">
+            <h2 class="center hide-on-med-and-up">
+                Angebot Suchen
+            </h2>
+            <div class="row" style="margin-bottom: 0">
+                <div class="col s12 m6">
+                    <img id="Pic1" class="responsive-img" src="pics\lebensmittel.jpeg" alt="lebensmittel">
+                </div>
+                <div class="col s12 m6" id="text-col" style="position: relative">
+                    <hr class="top-line" color="#356859">
+                    <div class="container">                        
+                        <h4 class="center">
+                            Lieber zu Dir als verschwendet:
+                        </h4>
+                        <p class="center">                            
+                            Suche jetzt nach Lebensmittel. Hier findest du die Angebote anderer Nutzer
+                        </p>
+                    </div>
+                    <hr class="bottom-line" color="#36859">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 hide-on-small-only">
+                    <h3 class="center" id="angebot-suchen">
+                         Angebot Suchen
+                    </h3>
+                </div>
+                <div class="col s12 m6" >
+                    <div class="searchbar-wrapper" style="margin-top: 10px">
+                        <form>
+                            <div class="input-field" style="margin: 0">
+                                <i class="material-icons prefix" style="color: #fffbe6; padding-top:5px">search</i>
+                                <input id="search-input" type="text" class="search" placeholder="Suche" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Suche'">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr id="separator-line" color="#37966f">
+            <h2 class="center hide-on-med-and-up">
+                Angebot Erstellen
+            </h2>
+            <div class="row">
+                <div class="col s12 m6 push-m6">
+                    <img id="Pic2" src="pics\fridge.jpeg" alt="Kühlschrank" class="responsive-img">
+                </div>
+                <div class="col s12 m6 pull-m6" id="text-col2" style="position: relative">
+                    <hr class="top-line" color="#356859"> 
+                    <div style="margin: 0 10px 0 10px">
+                        <div>
+                            <h4 class="center">
+                                    Warum wegschmeißen, wenn's noch gut ist?
+                            </h4>
+                            <p>                            
+                                Du bist die nächsten Tage unterwegs oder hast einfach noch ein paar Lebensmittel über? <br> Werf' sie nicht einfach weg, erstelle einfach eben ein Angebot.
+                                Andere Nutzer warten schon auf dein Angebot!
+                            </p>
+                        </div>
+                        <hr class="bottom-line" color="#36859">
+                    </div>                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6" id="add-field-wrapper">
+                    <a href="#">
+                        <div class="row" id="add-field" onmouseover="addFieldOnMouseOver()" onmouseout="addFieldOnMouseOut()">
+                            <div class="col s2" style="padding: 0">
+                                <i class="material-icons" id="add-icon">add_circle</i>
+                            </div>
+                            <div class="col s10" >
+                                <p id="add-field-text">Neues Angebot Erstellen</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <h2>
+
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p id="test"></p>
+        </div>
+
+        <script>
+            var smallScreen = window.matchMedia("(min-width: 601px)");
+
+            function rezize(){
+                /*document.getElementById("test").innerHTML = document.getElementById('text-col').clientWidth;*/
+                if (smallScreen.matches){
+                    var h = document.getElementById('Pic1').clientHeight;
+                    document.getElementById("text-col").style.height = h + "px";
+                    var f = document.getElementById('Pic2').clientHeight;
+                    document.getElementById("text-col2").style.height = f + "px";
+                }
+            }
+
+            window.onresize = rezize;
+            window.onload = rezize;
+        </script>
+    </body>
+</html>

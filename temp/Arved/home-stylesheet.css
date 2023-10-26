@@ -1,0 +1,162 @@
+body{
+    background-color: #fffbe6;
+}
+.brand-logo{
+    font-family: 'Montserrat', sans-serif;
+}
+div.nav-content ul{
+    text-align: center;
+}
+div.nav-content ul li{
+    float: none;
+}
+#sidebar-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.tabs .indicator{
+    background-color: #356859;
+}
+.tabs .tab a:hover{
+    background-color: #fffbe6;
+}
+.tabs .tab a.active{
+    background-color: #fffbe6;
+    color: none;
+}
+.top-line{
+    margin-top: 0;
+}
+.bottom-line{
+    position: absolute;
+    left: 10.5px;
+    bottom: 0;
+    width: 95%;
+    margin: 0;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #fd5523;
+    font-size: 9vw;
+    padding-left: 1%;
+    padding-right: 1%;
+}                    
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #fd5523;
+    font-size: 38px;
+    margin: 0;
+    margin-top: 20px;
+}
+@media (max-width: 999px){
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        color: #fd5523;
+        font-size: 3vw;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+p{
+    color: #356859;
+    font-size: 22px;
+}
+@media (max-width: 1300px){
+    p{
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 600px){
+    p{
+        font-size: 4vw;
+    }
+}
+@media (max-width: 300px){
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        color: #fd5523;
+        font-size: small;
+        font-weight: bold;
+    }
+}
+@media (min-width: 301px){
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        color: #fd5523;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+}
+@media (min-width: 601px){
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        color: #fd5523;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+.searchbar-wrapper{
+
+    background-color: #356859;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.input-field input[type=text]{
+    border-bottom: 1px solid #fffbe6;
+}
+.input-field input[type=text]:focus{
+    border-bottom: 1px solid #fd5523;
+}
+#separator-line{
+    width: 40%;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#add-field-wrapper{
+    position: relative;
+    height: 50px;
+    padding: 0 10.5px 0 10.5px;
+    text-align: center;
+}
+#add-field{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(53, 104, 89);
+    margin: 0;
+    border-radius: 100px;
+    display: inline-block;
+}
+@media (min-width: 800px){
+    #add-field{
+        height: 100%;
+        width: 340px;
+        background-color: #356859;
+        margin: 0;
+        border-radius: 100px;
+        display: inline-block;
+    }
+}
+#add-field-text{
+    color: #fffbe6; 
+    margin: 12px 0 0 0; 
+    font-size: 18px;
+    text-align: center;
+}
+@media (max-width: 400px){
+    #add-field-text{
+        color: #fffbe6; 
+        margin: 9.5% 0 0 0; 
+        font-size: 4vw;
+        text-align: center;
+    }
+}
+#add-icon{
+    font-size: 40px; 
+    color: #fffbe6; 
+    float: left;
+    padding: 5px
+}
